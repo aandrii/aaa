@@ -1,20 +1,31 @@
 import React from 'react';
 
 
+import './LoginPage.less';
 
-const AboutPage = React.createClass({
+
+
+const LoginPage = React.createClass({
     render() {
         return (
-            <div className='AboutPage'>
-               <h2 className="title"> This is messages Login Page </h2>
+            <div className='LoginPage'>  
 
-               <div className="text"> 
-                  <p> Duis ex velit nisi proident commodo pariatur laborum qui occaecat consequat non culpa.</p>
-                     
-               </div>
+                <div className="LoginPageBanner"> 
+
+                    <div className='LoginPageText'> 
+                        <h1>Hello Reactf</h1>
+                        <p>Duis ex velit nisi proident commodo pariatur laborum qui occaecat consequat non culpa.</p>                        
+                    </div>
+
+                    <img
+                        src='/img/bac.jpg'
+                        className='LoginPageImage'
+                    />
+                        
+                </div>
             </div>
         );
     }
 });
 
-export default AboutPage;
+export default LoginPage;

@@ -1,17 +1,16 @@
 import React from 'react';
 import { Link } from 'react-router';
 
-
+import './App.less';
 
 
 const App = React.createClass({
     render() {
         return (
-            <div className="app">
-               app
-                <div className='content'>
+            <div className="app">             
+                
                     {this.props.children}
-                </div>
+                
             </div>
         );
     }
